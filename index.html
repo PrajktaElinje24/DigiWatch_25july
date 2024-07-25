@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Digital Clock By Kamal Sir</h1>
+        <h2 id="Msg"></h2>
+        <script>
+            function show()
+            {
+                let msg=document.getElementById("msg");
+                let date=new Date();
+
+                let hr =d.getHours();
+                let shr=hr.tostring();
+                if(hr<10)
+                   shr="0"+shr;
+
+
+                let min =d.getMinutes();
+                let smin=mi.tostring();
+                if(hr<10)
+                   smi="0"+smi;
+
+                let se=d.getSeconds();
+                let sse=se.tostring();
+                if(se<10)
+                sse="0"+sse;
+
+                let ans=shr+":"+smi+":"+sse;
+                msg.innerHTML=ans;
+            }
+            show();
+            setInterval(show,1000);
+        </script>
+    </center>
+       
+    
+</body>
+</html>
